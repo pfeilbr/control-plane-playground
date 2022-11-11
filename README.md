@@ -20,4 +20,5 @@ learn [Control Plane](https://controlplane.com/)
 
 ## Resources
 
+- [Control Plane](https://controlplane.com/)
 - <https://docs.controlplane.com/>
