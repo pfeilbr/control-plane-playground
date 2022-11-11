@@ -37,7 +37,6 @@ learn [Control Plane](https://controlplane.com/)
 ## Demo
 
 
-
 ```sh
 # cli usage only for the deployment of resources
 
