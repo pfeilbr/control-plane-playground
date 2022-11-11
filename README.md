@@ -34,6 +34,60 @@ learn [Control Plane](https://controlplane.com/)
 - Accessing Cloud Resources
 - Erik - director of cust success
 
+## IAM Roles
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "CreateRoles",
+      "Effect": "Allow",
+      "Action": [
+        "iam:CreatePolicy",
+        "iam:UpdateAssumeRolePolicy",
+        "iam:DetachRolePolicy",
+        "iam:TagRole",
+        "iam:UpdateRoleDescription",
+        "iam:DeletePolicy",
+        "iam:CreateRole",
+        "iam:DeleteRole",
+        "iam:AttachRolePolicy",
+        "iam:UpdateRole",
+        "iam:PutRolePolicy",
+        "iam:TagPolicy"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+trust policy
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::957753459089:user/controlplane-driver",
+          "arn:aws:iam::957753459089:role/controlplane-driver"
+        ]
+      },
+      "Action": "sts:AssumeRole",
+      "Condition": {
+        "StringEquals": {
+          "sts:ExternalId": "merck-dev-01"
+        }
+      }
+    }
+  ]
+}
+```
+
 ## Demo
 
 
