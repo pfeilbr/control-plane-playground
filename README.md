@@ -13,6 +13,11 @@ learn [Control Plane](https://controlplane.com/)
 - graphana under the covers
 - control plane can use oidc connect for aws identity ([Creating OpenID Connect (OIDC) identity providers](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html))
 - reduced complexity for eng teams
+- agent (ec2 instance) needs to run in vpc
+  - creates a wiregaurd connection to hub.controlplane.com
+  - agent can run on a local server
+- secrets management is built in
+- cli and tf provider (verified)
 
 ## Concepts
 
@@ -27,6 +32,7 @@ learn [Control Plane](https://controlplane.com/)
     - Groups
     - Identity
 - Accessing Cloud Resources
+- Erik - dir of cust success
 
 ## Demo
 
@@ -41,9 +47,11 @@ learn [Control Plane](https://controlplane.com/)
 ## Questions
 
 - recommendation for secrets storage (api keys, db creds, etc.)
+  - "secrets" concept 
 - is there an iac solution for provisioning workload?  what is used for "repeatability"
 
 ## Resources
 
 - [Control Plane](https://controlplane.com/)
 - <https://docs.controlplane.com/>
+- <https://registry.terraform.io/providers/controlplane-com/cpln/latest>
