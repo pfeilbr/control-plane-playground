@@ -32,7 +32,7 @@ learn [Control Plane](https://controlplane.com/)
     - Groups
     - Identity
 - Accessing Cloud Resources
-- Erik - dir of cust success
+- Erik - director of cust success
 
 ## Demo
 
