@@ -17,7 +17,7 @@ learn [Control Plane](https://controlplane.com/)
 ## Concepts
 
 - Org - strictly isolated bounded context that encapsulates all the resources managed by Control Plane
-- Global Virtual Cloud (GVC)
+- Global Virtual Cloud (GVC) - defines a set of cloud providers and their locations.
 - Workloads - you specify a container image.  this is the unit of deployment.
 - Policy - governs resource access within an org to a set of principals. It enables fine-grained authorization rules to define the minimum amount of permissions required when accessing resources of the platform.
 - Principal Types
